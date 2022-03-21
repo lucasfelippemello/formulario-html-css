@@ -5,35 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div>
-        <h1>Cadastro de calouros</h1>
-        <p>Preencha suas informações</p>
+        <h1 id="titulo">Cadastro de calouros</h1>
+        <p id="subtitulo">Preencha suas informações</p>
         <br>
     </div>
 
     <form>
-        <fieldset>
+        <fieldset class="grupo">
             <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="campo">
+                <label for="sobrenome"><Strong>Sobrenome</Strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
-        <div>
-            <label>Email</label>
-            <input type="email" name="email" id="email">
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
         </div>
 
-        <div>
-            <label>Qual a sua área de estudo?</label>
+        <div class="campo">
+            <label><strong>Qual a sua área de estudo?</strong></label>
             <input type="radio" name="area" value="biologicas">
             <label for="biologicas">Biológicas</label>
             <input type="radio" name="area" value="exatas">
@@ -42,8 +43,9 @@
             <label for="humanas">Humanas</label>
         </div>
 
-        <div>
-            <label>Campus</label>
+        <div class="campo">
+            <label for="campus
+            "><strong>Campus</strong></label>
             <select id="campus">
                 <option selected disabled value="">Selecione</option>
                 <option>Central</option>
@@ -53,9 +55,9 @@
             </select>
         </div>
 
-        <fieldset>
+        <fieldset class="grupo">
             <div>
-                <label>Selecione as suas áreas de interesse:</label>
+                <label><strong>Selecione as suas áreas de interesse:</strong></label>
                 <input type="checkbox" id="interesse1" name="interesse1" value="design">
                 <label for="interesse1">Design</label>
                 <input type="checkbox" id="interesse2" name="interesse2" value="esportes">
@@ -71,12 +73,12 @@
 
         <div>
             <br>
-            <label>Conte-nos brevemente sobre suas experiências:</label>
+            <label><strong>Conte-nos brevemente sobre suas experiências:</strong></label>
             <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em"></textarea>
         </div>
 
-        <button type="submit">Concluído</button>
-        
+        <button class="botao" type="submit">Concluído</button>
+
     </form>
 </body>
 </html>
