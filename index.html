@@ -7,6 +7,76 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+
+    <div>
+        <h1>Cadastro de calouros</h1>
+        <p>Preencha suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label>Qual a sua área de estudo?</label>
+            <input type="radio" name="area" value="biologicas">
+            <label for="biologicas">Biológicas</label>
+            <input type="radio" name="area" value="exatas">
+            <label for="exatas">Exatas</label>
+            <input type="radio" name="area" value="humanas">
+            <label for="humanas">Humanas</label>
+        </div>
+
+        <div>
+            <label>Campus</label>
+            <select id="campus">
+                <option selected disabled value="">Selecione</option>
+                <option>Central</option>
+                <option>França</option>
+                <option>Gales
+                </option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Selecione as suas áreas de interesse:</label>
+                <input type="checkbox" id="interesse1" name="interesse1" value="design">
+                <label for="interesse1">Design</label>
+                <input type="checkbox" id="interesse2" name="interesse2" value="esportes">
+                <label for="interesse2">Esportes</label>
+                <input type="checkbox" id="interesse3" name="interesse3" value="eventos">
+                <label for="interesse3">Eventos</label>
+                <input type="checkbox" id="interesse4" name="interesse4" value="financeiro">
+                <label for="interesse4">Financeiro</label>
+                <input type="checkbox" id="interesse5" name="interesse5" value="social">
+                <label for="interesse5">Social</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Conte-nos brevemente sobre suas experiências:</label>
+            <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em"></textarea>
+        </div>
+
+        <button type="submit">Concluído</button>
+        
+    </form>
 </body>
 </html>
